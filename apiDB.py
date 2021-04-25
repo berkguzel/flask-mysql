@@ -16,32 +16,45 @@ app = Flask(__name__)
 
 @app.route('/SELECT', methods=['GET'])
 def select():
+
+    for i in request.args:
+        req = request.args.get(i)
+        if i == "name":
+            sql = "SELECT * FROM userx WHERE name = %s"
+            val = (req,)
+        elif i == "lastName":
+            sql = "SELECT * FROM userx WHERE lastName = %s"
+            val = (req, )
+        elif i == "mail":
+            sql = "SELECT * FROM userx WHERE mail = %s"
+            val= (req, )
+
+
+
     try:
         mysqldb =  connect()
         cursor =  mysqldb.cursor(buffered=True)
-        query = "SELECT * FROM berk.userx;"
-        cursor.execute(query)
+        cursor.execute(sql, val)
         response = cursor.fetchall()
         mysqldb.close()
     except mysql.connector.Error as e:
         if(e.errno == errorcode.ER_ACCESS_DENIED_ERROR):
-            return("AUTH ERROR! PLEASE CHECK LOG FILE.")
             logging.error(str(e))
+            return jsonify(Success=False, Error=str(e))
         elif(e.errno == errorcode.ER_BAD_DB_ERROR):
-            return("DB NOT EXIST! PLEASE CHECK LOG FILE.")
             logging.error(str(e))
+            return jsonify(Success=False, Error=str(e))
         else:
-            return("SOME ERROR OCCURED! PLEASE CHECK LOG FILE.")
             logging.error(str(e))
-    print(response)
-    return("SUCCESS")
+            return jsonify(Success=False, Error=str(e))
+
+    return jsonify(response)
 
 @app.route('/INSERT', methods=['POST'])
 def insert():
     name = request.args.get("name")
     lastName = request.args.get("lastName")
     mail = request.args.get("mail")
-    print(name, lastName, mail)
     try:
         mysqldb =  connect()
         cursor =  mysqldb.cursor(buffered=True)
@@ -53,15 +66,14 @@ def insert():
     except mysql.connector.Error as e:
         if(e.errno == errorcode.ER_ACCESS_DENIED_ERROR):
             logging.error(str(e))
-            return("AUTH ERROR! PLEASE CHECK LOG FILE.")
+            return jsonify(Success=False, Error=str(e))
         elif(e.errno == errorcode.ER_BAD_DB_ERROR):
             logging.error(str(e))
-            return("DB NOT EXIST! PLEASE CHECK LOG FILE.")
+            return jsonify(Success=False, Error=str(e))
         else:
             logging.error(str(e))
-            return("SOME ERROR OCCURED! PLEASE CHECK LOG FILE.")
-    return("OK")
-
+            return jsonify(Success=False, Error=str(e))
+    return jsonify(Success=True)
 
 
 @app.route('/DELETE', methods=['DELETE'])
@@ -71,7 +83,7 @@ def delete():
         if i == "name":
             sql = "DELETE FROM userx WHERE name = %s"
             val = (req,)
-        elif i == "lastname":
+        elif i == "lastName":
             sql = "DELETE FROM userx WHERE lastName = %s"
             val = (req, )
         elif i == "mail":
@@ -87,14 +99,14 @@ def delete():
     except mysql.connector.Error as e:
         if(e.errno == errorcode.ER_ACCESS_DENIED_ERROR):
             logging.error(str(e))
-            return("AUTH ERROR! PLEASE CHECK LOG FILE.")
+            return jsonify(Success=False, Error=str(e))
         elif(e.errno == errorcode.ER_BAD_DB_ERROR):
             logging.error(str(e))
-            return("DB NOT EXIST! PLEASE CHECK LOG FILE.")
+            return jsonify(Success=False, Error=str(e))
         else:
             logging.error(str(e))
-            return("SOME ERROR OCCURED! PLEASE CHECK LOG FILE.")
-    return("ok")
+            return jsonify(Success=False, Error=str(e))
+    return jsonify(Success=True)
 
 def connect():
     return mysql.connector.connect(
