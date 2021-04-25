@@ -1,0 +1,213 @@
+ERROR:root:No result set to fetch from.
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 17:51:03] "[37mPOST /INSERT?firstname=berkX&lastname=guzelX&mail=gzlX@gmail.com HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 17:52:20] "[37mPOST /INSERT?firstname=atiba&lastname=hutchinson&mail=atiba@gmail.com HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:24:26] "[31m[1mDELETE /INSERT?firstname=atiba HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:24:51] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:25:37] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:26:08] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:26:48] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:27:33] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:28:20] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:32:48] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:35:01] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:35:59] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:37:07] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:37:19] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%s' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:37:54] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:38:32] "[37mDELETE /DELETE?firstname=atiba HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:44:18] "[37mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 18:44:55] "[37mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:16:11] "[37mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:apiDB:Exception on /DELETE [DELETE]
+Traceback (most recent call last):
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "apiDB.py", line 71, in delete
+    key = request.args.get[0]
+TypeError: 'method' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:16:39] "[35m[1mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 500 -
+ERROR:apiDB:Exception on /DELETE [DELETE]
+Traceback (most recent call last):
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "apiDB.py", line 71, in delete
+    key = request.args.get[0]
+TypeError: 'method' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:16:43] "[35m[1mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:apiDB:Exception on /DELETE [DELETE]
+Traceback (most recent call last):
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "apiDB.py", line 71, in delete
+    key = request.args.get(key)
+UnboundLocalError: local variable 'key' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:18:00] "[35m[1mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 500 -
+ERROR:apiDB:Exception on /DELETE [DELETE]
+Traceback (most recent call last):
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "apiDB.py", line 71, in delete
+    key = request.args.get(key)
+UnboundLocalError: local variable 'key' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:18:45] "[35m[1mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:apiDB:Exception on /DELETE [DELETE]
+Traceback (most recent call last):
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "apiDB.py", line 71, in delete
+    key = request.args.key()
+AttributeError: 'ImmutableMultiDict' object has no attribute 'key'
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:20:17] "[35m[1mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:apiDB:Exception on /DELETE [DELETE]
+Traceback (most recent call last):
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "apiDB.py", line 71, in delete
+    for i in request.args.get():
+TypeError: get() missing 1 required positional argument: 'key'
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:22:33] "[35m[1mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:root:Not all parameters were used in the SQL statement
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:22:54] "[37mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:29:02] "[37mDELETE /DELETE?firstname=berkX HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:apiDB:Exception on /DELETE [DELETE]
+Traceback (most recent call last):
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "apiDB.py", line 85, in delete
+    cursor.execute(query, val)
+NameError: name 'query' is not defined
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:34:19] "[35m[1mDELETE /DELETE?firstname=berk HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:apiDB:Exception on /DELETE [DELETE]
+Traceback (most recent call last):
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/berk/.local/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "apiDB.py", line 84, in delete
+    cursor.execute(sql, val)
+UnboundLocalError: local variable 'val' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:35:10] "[35m[1mDELETE /DELETE?firstname=berk HTTP/1.1[0m" 500 -
+ERROR:root:1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'name'' = 'berk'' at line 1
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:35:20] "[37mDELETE /DELETE?name=berk HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:35:52] "[37mDELETE /DELETE?name=berk HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:37:03] "[37mDELETE /DELETE?name=berk HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:root:Not all parameters were used in the SQL statement
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:38:37] "[37mDELETE /DELETE?name=berk HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+ERROR:root:Not all parameters were used in the SQL statement
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:39:34] "[37mDELETE /DELETE?name=berk HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:40:23] "[37mDELETE /DELETE?name=berk HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:40:39] "[37mDELETE /DELETE?name=NULL HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:44:47] "[37mPOST /INSERT?name=abou&lastName=bakar&mail=abou@ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 19:46:17] "[37mPOST /INSERT?name=abou&lastName=bakar&mail=abou@ HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [25/Apr/2021 20:03:18] "[37mPOST /INSERT?name=abou&lastName=bakar&mail=abou@ HTTP/1.1[0m" 200 -
